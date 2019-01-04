@@ -4,6 +4,7 @@ public class UserNotFoundException extends Exception {
 
 	public UserNotFoundException()
 	{
-		super();
+		super("사용자를 찾을수가 없습니다.");
+		System.out.println(super.getMessage());
 	}
 }

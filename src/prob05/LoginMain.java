@@ -34,12 +34,10 @@ public class LoginMain {
 		if(sid&&spw)
 			System.out.println("로그인성공");
 		else if(sid&&!spw) {
-			System.out.println("비밀번호가 틀렸습니다.");
 			throw new PasswordDismatchException();
 		}
 		else if(!sid)
 		{
-			System.out.println("사용자를 찾을수가 없습니다.");
 			throw new UserNotFoundException();
 		}
 		/* -1 return 해서 if로 처리 

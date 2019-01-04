@@ -4,7 +4,8 @@ public class PasswordDismatchException extends Exception {
 	
 	public PasswordDismatchException()
 	{
-		super();
+		super("비밀번호가 틀렸습니다.");
+		System.out.println(super.getMessage());
 	}
 
 }
